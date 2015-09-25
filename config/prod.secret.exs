@@ -8,4 +8,5 @@ config :phoenix_dokku_example, PhoenixDokkuExample.Endpoint,
 
 # Configure your database
 config :phoenix_dokku_example, PhoenixDokkuExample.Repo,
+	adapter: Ecto.Adapters.Postgres,
 	url: System.get_env("DATABASE_URL")
